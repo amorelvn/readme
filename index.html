@@ -5,7 +5,7 @@
 <title>Built on Vision</title>
 
 <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500&family=Inter:wght@300;400;600&family=Dancing+Script&display=swap" rel="stylesheet"> <!-- Dancing Script hinzugefügt -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500&family=Inter:wght@300;400;600&family=Dancing+Script&display=swap" rel="stylesheet">
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -19,9 +19,9 @@ body{
   padding-top:70px; /* Platz für fixed nav */
 }
 
-/* Neue Klasse für eleganten Profiltext */
+/* Profiltext in eleganter Schrift */
 .dancing-text {
-  font-family: 'Dancing Script', cursive; /* Handgeschriebene Schrift von Google Fonts */ 
+  font-family: 'Dancing Script', cursive;
   font-size: 24px;
   line-height: 1.6;
   color: #2b4f6b;
@@ -260,7 +260,55 @@ Und so wird daraus – als natürliche Fortsetzung meiner Haltung – die Freude
 <section id="portfolio">
 <h2>Portfolio</h2>
 <div class="portfolio-grid">
-  ... <!-- dein Portfolio bleibt wie gehabt -->
+
+<div class="portfolio-card">
+  <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Web Plattform">
+  <div class="portfolio-info">
+    <h3>Web Plattform</h3>
+    <p>Kundenverwaltung</p>
+  </div>
+</div>
+
+<div class="portfolio-card">
+  <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mobile App">
+  <div class="portfolio-info">
+    <h3>Mobile App</h3>
+    <p>Tracking System</p>
+  </div>
+</div>
+
+<div class="portfolio-card">
+  <img src="https://images.pexels.com/photos/669619/pexels-photo-669619.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Dashboard">
+  <div class="portfolio-info">
+    <h3>Dashboard</h3>
+    <p>Datenanalyse</p>
+  </div>
+</div>
+
+<div class="portfolio-card">
+  <img src="https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Automation">
+  <div class="portfolio-info">
+    <h3>Automation</h3>
+    <p>Business Prozesse</p>
+  </div>
+</div>
+
+<div class="portfolio-card">
+  <img src="https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cloud Projekt">
+  <div class="portfolio-info">
+    <h3>Cloud Projekt</h3>
+    <p>Backend‑Architektur und Cloud‑Lösungen</p>
+  </div>
+</div>
+
+<div class="portfolio-card">
+  <img src="https://images.pexels.com/photos/1181253/pexels-photo-1181253.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Business Website">
+  <div class="portfolio-info">
+    <h3>Business Website</h3>
+    <p>Corporate Design</p>
+  </div>
+</div>
+
 </div>
 </section>
 
@@ -268,7 +316,22 @@ Und so wird daraus – als natürliche Fortsetzung meiner Haltung – die Freude
 <section id="kontakt">
 <h2>Kontakt</h2>
 <p class="about-text">Schicken Sie mir doch gerne eine Nachricht:</p>
-... <!-- Kontaktformular bleibt -->
+
+<div class="contact-form">
+  <form action="#" method="POST">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+
+    <label for="email">E-Mail</label>
+    <input type="email" id="email" name="email" placeholder="Ihre E-Mail" required>
+
+    <label for="message">Nachricht</label>
+    <textarea id="message" name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
+
+    <button type="submit">Senden</button>
+  </form>
+</div>
+
 </section>
 
 <!-- FOOTER -->
