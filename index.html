@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Built on Vision</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500&family=Inter:wght@300;400;600&family=Dancing+Script&display=swap" rel="stylesheet"> <!-- Dancing Script hinzugefügt -->
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  font-family:Inter,sans-serif;
+  background:#eaf1ff;
+  color:#111;
+  line-height:1.6;
+  scroll-behavior:smooth;
+  padding-top:70px; /* Platz für fixed nav */
+}
+
+/* Neue Klasse für eleganten Profiltext */
+.dancing-text {
+  font-family: 'Dancing Script', cursive; /* Handgeschriebene Schrift von Google Fonts */ 
+  font-size: 24px;
+  line-height: 1.6;
+  color: #2b4f6b;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* NAVIGATION */
+nav{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background:#92b5d6;
+  padding:15px 10%;
+  display:flex;
+  justify-content:flex-end;
+  z-index:1000;
+  box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:25px;
+  font-weight:600;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#e0f7fa;
+}
+
+/* HERO */
+.hero{
+  padding:120px 10%;
+  background:#92b5d6;
+  color:white;
+  text-align:center;
+  border-radius:0 0 40px 40px;
+}
+
+.hero h1{
+  font-family:'Playfair Display', serif;
+  font-size:60px;
+  margin-bottom:20px;
+}
+
+.btn{
+  margin-top:30px;
+  display:inline-block;
+  padding:14px 40px;
+  border-radius:40px;
+  background:white;
+  color:#92b5d6;
+  font-weight:600;
+  text-decoration:none;
+  transition:.3s;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+}
+
+/* SECTIONS */
+section{
+  padding:90px 10%;
+}
+
+h2{
+  text-align:center;
+  font-family:'Playfair Display', serif;
+  color:#2b4f6b;
+  margin-bottom:50px;
+  font-size:36px;
+}
+
+/* EXPERTISE TEXT GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;
+}
+
+.box{
+  background:rgba(255,255,255,.7);
+  backdrop-filter:blur(10px);
+  padding:30px;
+  border-radius:25px;
+  text-align:center;
+  font-weight:600;
+  font-size:18px;
+  transition:.4s;
+  box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.box:hover{
+  transform:translateY(-10px);
+}
+
+/* PORTFOLIO */
+.portfolio-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;
+}
+
+.portfolio-card{
+  background:rgba(255,255,255,.7);
+  backdrop-filter:blur(10px);
+  padding:20px;
+  border-radius:25px;
+  text-align:center;
+  transition:.4s;
+  box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.portfolio-card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:15px;
+}
+
+.portfolio-card:hover{
+  transform:translateY(-10px);
+}
+
+.portfolio-info h3{
+  margin-top:15px;
+}
+
+/* KONTAKT FORM */
+.contact-form{
+  max-width:500px;
+  margin:0 auto;
+  background:rgba(255,255,255,.7);
+  padding:30px;
+  border-radius:20px;
+  backdrop-filter:blur(10px);
+  box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.contact-form label{
+  display:block;
+  margin-top:15px;
+  font-weight:600;
+}
+
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:10px;
+  margin-top:5px;
+  border-radius:10px;
+  border:1px solid #92b5d6;
+  font-size:16px;
+}
+
+.contact-form button{
+  margin-top:20px;
+  padding:12px 25px;
+  border:none;
+  border-radius:25px;
+  background:#92b5d6;
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.contact-form button:hover{
+  background:#6faec7;
+}
+
+/* FOOTER */
+footer{
+  background:#92b5d6;
+  color:white;
+  text-align:center;
+  padding:40px;
+  margin-top:80px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <a href="#profil">Profil</a>
+  <a href="#expertise">Expertise</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#kontakt">Kontakt</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+<h1>Built on Vision</h1>
+<p>Digitale Lösungen – modern, zuverlässig, kreativ.</p>
+<a class="btn" href="#kontakt">Kontakt aufnehmen</a>
+</div>
+
+<!-- PROFIL -->
+<section id="profil">
+<h2>Profil</h2>
+
+<p class="dancing-text">
+In meinem Denken treffen Stille und Bewegung, Form und Raum aufeinander wie zwei Stimmen im Dialog. Dort, wo der Augenblick sich öffnet und das Unausgesprochene spürbar wird, finde ich die Schönheit in der Stille zwischen den Dingen.
+</p>
+
+<p class="dancing-text">
+Ich verspüre eine feine Faszination für das, was im Entstehen liegt – die Nuancen eines Gedankens, das Zusammenspiel von Wahrnehmung und Ausdruck, die Harmonie im Detail. Jeder neue Impuls ist ein Ausgangspunkt, jeder Blick trägt ein Potenzial in sich.
+</p>
+
+<p class="dancing-text">
+Und so wird daraus – als natürliche Fortsetzung meiner Haltung – die Freude an <strong>digitalen Lösungen</strong>, die nicht nur funktionieren, sondern im Ausdruck und in ihrer Ausrichtung eine leise, klare Harmonie zwischen Idee und Erfahrung schaffen.
+</p>
+
+</section>
+
+<!-- EXPERTISE -->
+<section id="expertise">
+<h2>Expertise</h2>
+<div class="grid">
+  <div class="box">Software Engineering</div>
+  <div class="box">Web Engineering</div>
+  <div class="box">Systemdesign</div>
+  <div class="box">Datenbanken</div>
+  <div class="box">Beratung</div>
+  <div class="box">Projektbegleitung</div>
+</div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+<h2>Portfolio</h2>
+<div class="portfolio-grid">
+  ... <!-- dein Portfolio bleibt wie gehabt -->
+</div>
+</section>
+
+<!-- KONTAKT -->
+<section id="kontakt">
+<h2>Kontakt</h2>
+<p class="about-text">Schicken Sie mir doch gerne eine Nachricht:</p>
+... <!-- Kontaktformular bleibt -->
+</section>
+
+<!-- FOOTER -->
+<footer>
+© 2026
+</footer>
+
+</body>
+</html>
